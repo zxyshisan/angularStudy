@@ -1,0 +1,8 @@
+<h2>AngularJS 数字</h2>
+<div  ng-init="quantity=1;cost=5">
+    <p>总价： {{ quantity * cost }}</p>
+</div>
+使用 ng-bind 的相同实例：
+<div ng-init="quantity=1;cost=5">
+    <p>总价： <span ng-bind="quantity * cost"></span></p>
+</div>

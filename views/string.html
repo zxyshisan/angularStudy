@@ -1,0 +1,8 @@
+<h2>AngularJS 字符串</h2>
+<div ng-init="firstName='John';lastName='Doe'">
+    <p>姓名： {{ firstName + " " + lastName }}</p>
+</div>
+使用 ng-bind 的相同实例：
+<div ng-init="firstName='John';lastName='Doe'">
+    <p>姓名： <span ng-bind="firstName + ' ' + lastName"></span></p>
+</div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>Angular-basic</title>
+    <meta name="description">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app="app">
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">AngularJS</a>
+        </div>
+        <div id="bs-example-navbar-collapse-5" class="collapse navbar-collapse">
+            <p class="navbar-text navbar-right"><a class="navbar-link" href="#/login">login</a></p>
+
+            <p class="navbar-text navbar-right"><a class="navbar-link" href="#/register">register</a></p>
+        </div>
+    </div>
+</nav>
+<div id="content" class="content container" ng-view></div>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="footer">
+        <div class="container">
+            <p>
+                version1.0
+            </p>
+        </div>
+    </div>
+</nav>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="scripts/angular/app.js"></script>
+<script src="scripts/angular/controllers.js"></script>
+
+</body>
+</html>
