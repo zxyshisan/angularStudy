@@ -1,0 +1,8 @@
+<h2>AngularJS 过滤器之货币</h2>
+<div ng-init="amount=1234.56">
+    <input type="number" ng-model="amount" aria-label="amount"> <br>
+    default currency symbol ($): <span id="currency-default">{{amount | currency}}</span><br>
+    custom currency identifier (USD$): <span id="currency-custom">{{amount | currency:"USD$"}}</span><br>
+    custom currency identifier (USD$): <span id="currency">{{amount | currency:"￥"}}</span><br>
+    no fractions (0): <span id="currency-no-fractions">{{amount | currency:"USD$":0}}</span>
+</div>

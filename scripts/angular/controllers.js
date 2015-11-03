@@ -12,3 +12,17 @@ app.controller('appCtrl',function($scope){
     $scope.firstName= "John";
     $scope.lastName= "Doe";
 });
+app.controller('personCtrl',function($scope){
+    $scope.firstName = "zhang";
+    $scope.lastName = "xinyu";
+    $scope.fullName = function(){
+        return $scope.firstName+" "+$scope.lastName;
+    }
+});
+app.controller('httpCtrl',function($scope,$http){
+    $http.get("./json/user.json")
+        .success(function(response){
+            $scope.names=response;
+            console.log(response);
+        });
+});

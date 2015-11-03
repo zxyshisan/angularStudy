@@ -1,0 +1,8 @@
+<h2>AngularJS 过滤器之排序</h2>
+<div ng-init="users=[{name:'张三',province:'陕西省'},{name:'李四',province:'山东省'},{name:'王五',province:'内蒙古'}]">
+    <ul>
+        <li ng-repeat="x in users | orderBy:'province'">
+            {{ x.name + ', ' + x.province }}
+        </li>
+    </ul>
+</div>

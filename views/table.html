@@ -1,0 +1,13 @@
+<h2>AngularJS table</h2>
+<div>
+    <table>
+        <tr ng-repeat="x in names | orderBy : 'Country'">
+            <td ng-if="$odd" style="background-color:#f1f1f1">{{ $index + 1 }}</td>
+            <td ng-if="$even">{{ $index + 1 }}</td>
+            <td ng-if="$odd" style="background-color:#f1f1f1">{{ x.Name }}</td>
+            <td ng-if="$even">{{ x.Name }}</td>
+            <td ng-if="$odd" style="background-color:#f1f1f1">{{ x.Country | uppercase }}</td>
+            <td ng-if="$even">{{ x.Country | uppercase }}</td>
+        </tr>
+    </table>
+</div>

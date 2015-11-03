@@ -19,5 +19,12 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/array', {templateUrl: './views/array.html', controller: ''})
         .when('/bind', {templateUrl: './views/bind.html', controller: ''})
         .when('/repeat', {templateUrl: './views/repeat.html', controller: ''})
+        .when('/controller', {templateUrl: './views/controller.html', controller: 'personCtrl'})
+        .when('/filters1', {templateUrl: './views/filters1.html', controller: 'personCtrl'})
+        .when('/filters2', {templateUrl: './views/filters2.html', controller: 'appCtrl'})
+        .when('/filters3', {templateUrl: './views/filters3.html', controller: ''})
+        .when('/filters4', {templateUrl: './views/filters4.html', controller: ''})
+        .when('/http', {templateUrl: './views/http.html', controller: 'httpCtrl'})
+        .when('/table', {templateUrl: './views/table.html', controller: 'httpCtrl'})
         .otherwise({redirectTo: '/login'});
 }]);
