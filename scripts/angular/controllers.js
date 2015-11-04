@@ -26,3 +26,11 @@ app.controller('httpCtrl',function($scope,$http){
             console.log(response);
         });
 });
+app.controller('hideCtrl', function($scope) {
+    $scope.firstName = "John",
+        $scope.lastName = "Doe"
+    $scope.myVar = false;
+    $scope.toggle = function() {
+        $scope.myVar = !$scope.myVar;
+    };
+});

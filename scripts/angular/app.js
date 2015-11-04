@@ -26,5 +26,8 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/filters4', {templateUrl: './views/filters4.html', controller: ''})
         .when('/http', {templateUrl: './views/http.html', controller: 'httpCtrl'})
         .when('/table', {templateUrl: './views/table.html', controller: 'httpCtrl'})
+        .when('/click', {templateUrl: './views/click.html', controller: ''})
+        .when('/hide', {templateUrl: './views/hide.html', controller: 'hideCtrl'})
+        .when('/events', {templateUrl: './views/events.html', controller: ''})
         .otherwise({redirectTo: '/login'});
 }]);
