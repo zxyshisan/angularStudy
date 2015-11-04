@@ -1,0 +1,27 @@
+<h2>AngularJS 事件</h2>
+<h3>ng-click</h3>
+<div>
+    <button ng-click="count = count + 1" ng-init="count=0">
+        Increment
+    </button>
+    <span>
+      count: {{count}}
+    </span>
+</div>
+<h3>ng-dblclick</h3>
+<div>
+    <button ng-dblclick="count1 = count1 + 1" ng-init="count1=0">
+        Increment (on double click)
+    </button>
+    count: {{count1}}
+</div>
+<h3>ng-cut</h3>
+<div>
+    <input ng-cut="cut=true" ng-init="cut=false; value='cut me'" ng-model="value">
+    cut: {{cut}}
+</div>
+<h3>ng-copy</h3>
+<div>
+    <input ng-copy="copied=true" ng-init="copied=false; value='copy me'" ng-model="value">
+    copied: {{copied}}
+</div>
